@@ -18,8 +18,7 @@ imgBP {
 
 .active {
     background-color: rgba(127, 134, 173, 0.863);
-}
-{
+
     margin: 0;
     padding: 0;
     box-sizing: border-box;
