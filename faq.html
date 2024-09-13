@@ -1,76 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Study choice activities</title>
-    <link href="styles.css" rel="stylesheet"/>
-  </head>
-  <body>
-    <header>
-    <nav class="navibar">
-      <div class="logo">
-        <img src="../imeges/hz.logo.png" width="300" height="200" alt="logo">
-      </div>
-      <div class="menu">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="profile.html">profile</a></li>
-            <li><a href="dashboard.html">Dashboard</a></li>
-            <li><a href="faq.html">FAQ</a></li>
-            <li><a href="blog.html">Blog</a></li>
-        </ul>
-      </div>
-    </nav>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Study Choice Activities - FAQ</title>
+  <style>
+    /* General Styles */
+    body {
+      background-color: #f4f4f4; /* Fallback background color */
+      background-image: url(—Pngtree—3d\ rendering\ of\ website\ builder_7231387.jpg); /* Ensure correct path and no special characters */
+      background-size: cover; /* Ensure the background covers the entire page */
+      background-position: center; /* Center the background image */
+      background-attachment: fixed; /* Keep the background fixed while scrolling */
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: #333;
+    }
+
+    /* Header Styling */
+        header {
+      background-color: #333;
+      padding: 10px 0;
+    }
+
+    .navibar {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .menu ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    .menu ul li {
+      display: inline;
+    }
+
+    .menu ul li a {
+      color: white;
+      text-decoration: none;
+      padding: 10px 20px;
+      font-size: 16px;
+    }
+
+    .menu ul li a.active {
+      font-weight: bold;
+    }
+
+    #logo {
+      margin-left: auto;
+    }
+
+    /* Main Content */
+    .wrapper {
+      max-width: 1200px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: rgba(242, 225, 243, 0.671);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+    }
+    .faq-content h1 {
+      font-size: 32px;
+      margin-bottom: 20px;
+      font-family: 'Courier New', monospace;
+    }
+    .faq-content p {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+    .faq-content article {
+      margin-bottom: 20px;
+    }
+    .faq-question {
+      font-size: 20px;
+      color: #170346;
+      margin-bottom: 10px;
+      font-family: Garamond, serif;
+    }
+    .faq-content article p {
+      font-size: 16px;
+      line-height: 1.6;
+      padding-left: 20px;
+      font-family: Georgia, serif;
+    }
+
+    /* Footer Styling */
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: auto;
+    }
+
+    footer a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      header .menu {
+        flex-direction: column;
+        align-items: center;
+      }
+      header .menu ul {
+        flex-direction: column;
+      }
+      header .menu ul li {
+        margin-bottom: 10px;
+      }
+      .wrapper {
+        padding: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="html/profile.html">Profile</a></li>
+        <li><a href="html/dashboard.html">Dashboard</a></li>
+        <li><a class="active" href="html/faq.html">FAQ</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><img class="logo" src="hz-logo.png" width="25px" height="30px" alt="Logo"></li>
+      </ul>
+    </div>
   </header>
+
   <main class="wrapper">
     <div class="faq-content">
       <h1>Frequently Asked Questions</h1>
-      <p>Here you can find answers to some common questions about my work and project</p>
+      <p>Find answers to some common questions below:</p>
 
       <article>
         <h2 class="faq-question">1. How can you print a document from your laptop at HZ?</h2>
-        <p>To print a document, connect to the university's wi-fi network, ffind a printer through the HZ portal, and 
-          follow the instructions for sending your document to the selected printer.
-        </p>
+        <p>1. Connect to the university WiFi. 2. Install printer drivers or use a web portal if provided. 3. Send the document to the printer. 4. Go to the printer and log in with your student ID.</p>
       </article>
+
       <article>
         <h2 class="faq-question">2. How can you scan a document and send it to your laptop at HZ?</h2>
-        <p>You can scan documents using the multi-function printers located in the study areas. After scanning, send
-          document to your email or save it to a USB drive.
-        </p>
+        <p>1. Choose a scanner. 2. Scan the document. 3. Send it to your laptop. 4. Check scan settings for quality.</p>
       </article>
+
       <article>
-        <h2 class="faq-question">3. How can I buy something(like when I sign up for the IT introduction event)on 
-          HZ web shop?
-        </h2>
-        <p>Visit the HZ webshop, create an account or log in, select the items oe events you wish to purchase, and 
-          follow the payment imstructions to complete your order.
-        </p>
+        <h2 class="faq-question">3. How can I buy something on the HZ webshop (like when signing up for the IT introduction event)?</h2>
+        <p>1. Visit the HZ webshop. 2. Sign up for the event or product. 3. Create an account or log in. 4. Enter required information. 5. Complete the registration. 6. Receive confirmation.</p>
       </article>
-      <artucle>
+
+      <article>
         <h2 class="faq-question">4. How can you book a project space?</h2>
-        <P>To book a project space, use the online reservation system avaible on the HZ website. select the date and 
-          time you need, and confirm your booking.
-        </P>
-      </artucle>
+        <p>1. Visit the HZ website. 2. Find project space information. 3. Check availability. 4. Select your space and date. 5. Fill out the booking form. 6. Review and confirm. 7. Complete the payment if required. 8. Receive booking confirmation.</p>
+      </article>
+
       <article>
-        <h2 class="faq-question">5. What are the instructions if you want to park your car at the HZ parking lot?</h2>
-        <p>Parking is available at HZ. You need to register your vehicle in the parking system and follow the parking 
-          regulations indicated on-site.
-        </p>
+        <h2 class="faq-question">5. What are the instructions for parking your car at the HZ parking lot?</h2>
+        <p>1. Check parking policies. 2. Locate the parking area. 3. Obtain a parking permit if needed. 4. Follow parking instructions. 5. Pay for parking. 6. Display the permit. 7. Adhere to time limits.</p>
       </article>
     </div>
   </main>
 
-  <footer></footer>
+  <footer>
     <div class="footer-container">
       <div class="footer-section">
         <h3>Contact Me</h3>
-        <p>Email: yasaminabdollahi27@gmail.com</p>
-        <p>instageram: <a href="https://www.instageram.com/aysminn_" target="_blank"></a></p>
+        <p>Email: <a href="mailto:yasaminabdollahi27@gmail.com">yasaminabdollahi27@gmail.com</a></p>
+        <p>Instagram: <a href="https://www.instagram.com/aysminn_" target="_blank">aysminn_</a></p>
       </div>
     </div>
   </footer>
-  </body>
+</body>
 </html>
+

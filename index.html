@@ -1,87 +1,259 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Home Page</title>
-    <link rel="stylesheet" href="style.css">
-    <title>Background Image</title>
-    <link rel="stylesheet" href="styles.css">
-  </head>
-  <body>
-    <header>
-      <nav class="navibar">
-        
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Home Page</title>
+  <style>
+    /* Basic Reset and Body Styling */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    body {
+      background-image: url(—Pngtree—3d\ rendering\ of\ website\ builder_7231387.jpg); /* Replace with your image path */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    /* Header Styling */
+    header {
+      background-color: #333;
+      padding: 10px 0;
+    }
+
+    .navibar {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .menu ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    .menu ul li {
+      display: inline;
+    }
+
+    .menu ul li a {
+      color: white;
+      text-decoration: none;
+      padding: 10px 20px;
+      font-size: 16px;
+    }
+
+    .menu ul li a.active {
+      font-weight: bold;
+    }
+
+    #logo {
+      margin-left: auto;
+    }
+
+    /* Main Welcome Section */
+    .wrapper {
+      text-align: center;
+      padding: 50px 20px;
+      background-color: #eed9e9ce;
+      color: black;
+      font-family: Georgia, serif;
+    }
+
+/* About Me Section */
+.about-me {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  background-color: #eccdec00; /* Background color for the about me section */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+}
+
+.about-me .text {
+  max-width: 600px;
+  margin-right: 40px;
+  flex: 1;
+  background-color: rgba(255, 255, 255, 0.808); /* Slightly translucent background for readability */
+  padding: 20px;
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+}
+
+.about-me .images {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.about-me img {
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+    /* Additional Info Section */
+    .additional-info {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 40px 20px;
+      background-color: #ffffffd2;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Footer Styling */
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: auto;
+    }
+
+    footer a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* Aside Links Section */
+    .navigation .aside {
+    margin: 30px 0;
+    text-align: center;
+    background-color: rgba(253, 237, 246, 0.712); /* Corrected rgba syntax */
+    padding: 20px; /* Optional: add padding for spacing */
+    border-radius: 8px; /* Optional: add rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: add shadow for depth */
+    }
+    .aside ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .aside ul li {
+      display: inline;
+      margin-right: 15px;
+    }
+
+    .aside ul li a {
+      color: #333;
+      text-decoration: none;
+      font-size: 16px;
+    }
+
+
+    /* Responsive Media Queries */
+    @media (max-width: 768px) {
+      .about-me {
+        flex-direction: column;
+      }
+
+      .about-me .text,
+      .about-me .images {
+        margin: 0;
+      }
+
+
+      .aside ul li a:hover {
+      text-decoration: underline;
+    }
+
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Header Section -->
+  <header>
+    <nav class="navibar">
       <div class="menu">
         <ul>
-          <li><a href="../index.html">Home</a></li>
-          <li><a href="../html/profile.html">Profile</a></li>
-          <li><a href="../html/dashboard.html">Dashboard</a></li>
-          <li><a href="../html/faq.html">FAQ</a></li>
+          <li><a class="active" href="index.html">Home</a></li>
+          <li><a href="profile.html">Profile</a></li>
+          <li><a href="dashboard.html">Dashboard</a></li>
+          <li><a href="faq.html">FAQ</a></li>
           <li><a href="blog.html">Blog</a></li>
           <li><img id="logo" src="hz-logo.png" width="25px" height="30px" alt="Logo"></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Welcome Section -->
+  <main class="wrapper">
+    <h1>Welcome, I hope you enjoy browsing my site!</h1>
+  </main>
+
+  <!-- About Me Section -->
+  <section class="about-me">
+    <div class="text">
+      <h2>Unveiling Yasamin: My Story, My Passion</h2>
+      <p>About Me!</p>
+      <p>My name is Yasamin, and I’m a 19-year-old ICT student at HZ University. My journey into the world of Information and Communication Technology is fueled by a deep curiosity and a passion for exploring the intersection of technology and human interaction.</p>
+      <p>I graduated from high school with a focus on humanities literature, which provided me with a strong foundation in critical thinking, communication, and analytical skills. This unique background has greatly influenced my approach to ICT, allowing me to bring a creative and human-centered perspective to the technical field.</p>
+      <p>At HZ University, I am immersing myself in various aspects of ICT, from software development to digital systems and cybersecurity. My academic journey has been an exciting exploration of how technology can be harnessed to solve real-world problems and enhance our daily lives.</p>
+    </div>
+    <div class="images">
+      <img src="unnamed.jpg" width="300" height="400" alt="Pic 1">
+      <img src="unnamed (1).jpg" width="300" height="400" alt="Pic 2">
+    </div>
+  </section>
+
+  <!-- Additional Info Section -->
+  <main class="additional-info">
+    <div class="info-text">
+      <p>Why ICT?</p>
+      <p>In addition to my studies, I am particularly interested in how technology can be used to improve user experience and accessibility, drawing from my humanities background to understand diverse user needs and perspectives. I am eager to apply my skills in practical settings, contribute to innovative projects, and collaborate with others who share my enthusiasm for technology.</p>
+      <p>Outside of academics, I enjoy reading literature, exploring new technologies, and participating in community projects, which keep me motivated and inspired. I look forward to connecting with like-minded individuals and exploring opportunities to grow both personally and professionally in the ICT field.</p>
+      <p>Thank you for taking the time to learn more about me. I am excited about the future and eager to contribute my skills and passion to meaningful projects and collaborations.</p>
+    </div>
+  </main>
+
+  <!-- External Links Section -->
+  <nav class="navigation">
+    <div class="aside">
+      <p>For more information about ICT and HZ University, just click the links:</p>
+      <ul>
+        <li><a href="https://hz.nl" target="_blank" rel="noopener noreferrer">hz.nl</a></li>
+        <li><a href="https://learn.hz.nl" target="_blank" rel="noopener noreferrer">learn.hz.nl</a></li>
       </ul>
-      </div>
-      </nav>
-    </header>
-    <main class="wrapper">
-        <h1>Welcome, I hope you enjoy browsing my site!</h1>
-    </main>  
+    </div>
+  </nav>
 
-    <div class="wrapper3">
-      <div class="Home-content">
-        <h2 id="heading"> About Me</h2>
-        <p id="para">Hello! My name is Yasamin, and I’m a 19-year-old ICT student at HZ University. 
-          My journey into the world of Information and Communication Technology is fueled by a deep curiosity and a passion for exploring the intersection of technology and human interaction.
-
-          I graduated from high school with a focus on humanities literature, which provided me with a strong foundation in critical thinking, communication, and analytical skills.
-           This unique background has greatly influenced my approach to ICT, allowing me to bring a creative and human-centered perspective to the technical field.
-          
-          At HZ University, I am immersing myself in various aspects of ICT, from software development to digital systems and cybersecurity.
-           My academic journey has been an exciting exploration of how technology can be harnessed to solve real-world problems and enhance our daily lives.
-        </p>
+  <!-- Footer Section -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-section">
+        <h3>Contact Me</h3>
+        <p>Email: yasaminabdollahi27@gmail.com</p>
+        <p>Instagram: <a href="https://www.instagram.com/aysminn_" target="_blank">aysminn_</a></p>
       </div>
     </div>
-<br>
-    <div class="wrapper2">
-      <div class="Home-content">
-       <p> In addition to my studies, I am particularly interested in how technology can be used to improve user experience and accessibility, drawing from my humanities background to understand diverse user needs and perspectives.
-         I am eager to apply my skills in practical settings, contribute to innovative projects, and collaborate with others who share my enthusiasm for technology.
-     
-        Outside of academics, I enjoy [mention any hobbies or interests you have, e.g., reading literature, exploring new technologies, or participating in community projects], which keep me motivated and inspired. 
-         I look forward to connecting with like-minded individuals and exploring opportunities to grow both personally and professionally in the ICT field.
-     
-        Thank you for taking the time to learn more about me. I am excited about the future and eager to contribute my skills and passion to meaningful projects and collaborations. 
-        </p>
-      </div>
-    </div>
+  </footer>
 
-    <nav class="navigation">
-        <div class="aside">
-          <p> For more information about ICT and HZ university just click the links</p>
-        <ul>
-            <li><a href="https://hz.nl/en" target="_blank" rel="noopener noreferrer">hz.nl</a></li>
-            <li><a href="https://learn.hz.nl/my/" target="_blank" rel="noopener noreferrer">learn.hz.nl</a></li>
-        </ul>    
-      </div>
-      <section>
-        <div class="pic">
-       <img src="unnamed.jpg" width="200" height="300" alt="pic">
-        </div>
-       <div class="pic2">
-       <img src="unnamed (1).jpg" width="200" height="300" alt="pic">
-      </div>
-      </section>
-      <section>
-        <fieldset>
-            <legend>which field of study do you want to continue?</legend>
-            <label><input id="Computer Networking" type="text" name="education" value="Computer Networking"checked></label>
-            <label><input  id="Software Development" type="text" name="education" value="Software Development"></label>
-            <label><input id="Artificial Intelligence" type="text" name="education" value="Artificial Intelligence"></label>
-            <label><input id="edu-other" checked type="text" name="education" value="other">other <input type="text" name="other" hidden cla></label>
-        </fieldset>
-      </section>
-      </nav>
-  </body>
+</body>
+
 </html>

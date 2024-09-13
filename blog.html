@@ -1,77 +1,225 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Study choice activities</title>
-    <link href="styles.css" rel="stylesheet"/>
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Study Choice Activities</title>
+  <style>
+    /* General Styles */
+    body {
+      background-color: #f0f2f5;
+      font-family: Arial, sans-serif;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+        /* Body background with an image */
+        body {
+      background-image: url(—Pngtree—3d\ rendering\ of\ website\ builder_7231387.jpg); /* Replace with your image path */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+        /* Header Styling */
+        header {
+      background-color: #333;
+      padding: 10px 0;
+    }
+
+    .navibar {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .menu ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    .menu ul li {
+      display: inline;
+    }
+
+    .menu ul li a {
+      color: white;
+      text-decoration: none;
+      padding: 10px 20px;
+      font-size: 16px;
+    }
+
+    .menu ul li a.active {
+      font-weight: bold;
+    }
+
+    #logo {
+      margin-left: auto;
+    }
+
+    /* Main Content */
+    .wrapper {
+      max-width: 1200px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #ffffffc7;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+    }
+
+    .blog-content h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+      font-family: 'Courier New', monospace;
+      color: #333;
+    }
+
+    .blog-content p {
+      font-size: 18px;
+      color: #666;
+    }
+
+    .post-feed article {
+      margin-bottom: 20px;
+      padding: 15px;
+      background-color: #f9f9f9;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .post-feed h2 {
+      font-size: 24px;
+      color: #170346;
+      margin-bottom: 10px;
+      font-family: Georgia, serif
+    }
+
+    .post-feed p {
+      font-size: 16px;
+      line-height: 1.6;
+      color: #444;
+    }
+
+    .post-feed a {
+      text-decoration: none;
+      color: #007bff;
+      font-weight: bold;
+    }
+
+    .post-feed a:hover {
+      text-decoration: underline;
+    }
+
+    /* Footer Styling */
+    footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      margin-top: 20px;
+    }
+
+    footer .footer-container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    footer .footer-section h3 {
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
+
+    footer .footer-section p {
+      font-size: 16px;
+      margin: 5px 0;
+    }
+
+    footer a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      header .menu {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      header .menu ul {
+        flex-direction: column;
+      }
+
+      header .menu ul li {
+        margin-bottom: 10px;
+      }
+
+      .wrapper {
+        padding: 15px;
+      }
+    }
+  </style>
+</head>
 <body>
   <header>
-    <nav class="navibar">
-        <div class="logo">
-          <img src="../YasaminAbd.github.io/hz-logo.png" width="300" height="200" alt="logo">
-        </div>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="profile.html">profile</a></li>
-            <li><a href="dashboard.html">Dashboard</a></li>
-            <li><a href="faq.html">FAQ</a></li>
-            <li><a href="blog.html">Blog</a></li>
-        </ul>
-    </nav>
+    <div class="menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a class="active" href="blog.html">Blog</a></li>
+        <li><img id="logo" src="hz-logo.png" width="25" height="30" alt="Logo"></li>
+      </ul>
+    </div>
   </header>
+
   <main class="wrapper">
     <div class="blog-content">
       <h1>Blog</h1>
-      <p>Welcome to my blog. Here you will find articles and uptades related to my interests and projects.</p>
+      <p>Welcome! This is the blog page.</p>
     </div>
 
     <section class="post-feed">
       <article>
         <h2>Study Choice</h2>
-        <summary>
-          <p>This article discuss my study choice activities, motivations for choosing this path, and 
-            reflections on what I hope to achieve after comoleting mt studies.</p>
-        </summary>
-        <a href="../html/study-choice.html">Read more...</a>
+        <p>This article discusses my study choice activities, motivations for choosing this path, and reflections on what I hope to achieve after completing my studies.</p>
+        <a href="study-choice.html">Read more...</a>
       </article>
       <article>
-        <h2>Personal Swot Analysis</h2>
-        <summary>
-          <p>In this post, I reflect on my personal stregths, weaknesses, opportunities, and threats as I
-            navigate my studies and future career.
-          </p>
-        </summary>
-        <a href="../html/swot-analysis.html">Read more...</a>
+        <h2>Personal SWOT Analysis</h2>
+        <p>In this post, I reflect on my personal strengths, weaknesses, opportunities, and threats as I navigate my studies and future career.</p>
+        <a href="swotAnalysis.html">Read more...</a>
       </article>
       <article>
         <h2>Programming Experience</h2>
-        <summary>
-          <p>This entry details my programming experiences so far, including challenges I've faces and skills
-            I've developed through various projects.
-          </p>
-        </summary>
-        <a href="../html/programing-experience.html">Read more...</a>
+        <p>This entry details my programming experiences so far, including challenges I've faced and skills I've developed through various projects.</p>
+        <a href="programmingExperience.html">Read more...</a>
       </article>
       <article>
         <h2>First Feedback</h2>
-        <summary>
-          <p>Here, I share the feedback I received from my SKC assignment and my thoughts on how it has
-            influenced my approach to learning and improvement.
-          </p>
-        </summary>
-        <a href="../html/first-feedback.html">Read more...</a>
+        <p>Here, I share the feedback I received from my SKC assignment and my thoughts on how it has influenced my approach to learning and improvement.</p>
+        <a href="firstFeedback.html">Read more...</a>
       </article>
       <article>
-        <h2>Exploring the ICT field</h2>
-        <summary>
-          <p>This article provides insights into the ICT field of work, discussing trends, opportunities, and
-            how I see my future fitting into this industry.
-          </p>
-        </summary>
-        <a href="../html/ict-field.html">Read more...</a>
+        <h2>Exploring the ICT Field</h2>
+        <p>This article provides insights into the ICT field of work, discussing trends, opportunities, and how I see my future fitting into this industry.</p>
+        <a href="ictField.html">Read more...</a>
       </article>
     </section>
   </main>
@@ -80,18 +228,10 @@
     <div class="footer-container">
       <div class="footer-section">
         <h3>Contact Me</h3>
-        <p>Email: yasaminabdollahi27@gmail.com</p>
-        <p>instageram: <a href="https://www.instageram.com/aysminn_" target="_blank"></a></p>
-        <div class="footer-section">
-          <h3>About</h3>
-          <p>I am passionate about Technology and innovation.</p>
-        </div>
+        <p>Email: <a href="mailto:yasaminabdollahi27@gmail.com">yasaminabdollahi27@gmail.com</a></p>
+        <p>Instagram: <a href="https://www.instagram.com/aysminn_" target="_blank" rel="noopener noreferrer">aysminn_</a></p>
       </div>
     </div>
-    <div class="footer-bottom">
-      <p>copy; 2024 Ivayla Ilieva. All Rights Reserved.
-      </p>
-    </div>
   </footer>
-  </body>
+</body>
 </html>

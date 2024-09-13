@@ -1,55 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>profile</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Profile Page</title>
+  <style>
+    /* Body background with an image */
+    body {
+      background-image: url(—Pngtree—3d\ rendering\ of\ website\ builder_7231387.jpg); /* Replace with your image path */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+        /* Header Styling */
+        header {
+      background-color: #333;
+      padding: 10px 0;
+    }
+
+    .navibar {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .menu ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    .menu ul li {
+      display: inline;
+    }
+
+    .menu ul li a {
+      color: white;
+      text-decoration: none;
+      padding: 10px 20px;
+      font-size: 16px;
+    }
+
+    .menu ul li a.active {
+      font-weight: bold;
+    }
+
+    #logo {
+      margin-left: auto;
+    }
+
+
+    .content-wrapper {
+      display: flex;
+      font-family: 'Courier New', monospace;
+      justify-content: center;
+      align-items: center;
+      flex-grow: 1; /* Takes up the remaining space */
+    }
+
+    .profile-container {
+      text-align: center;
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .imgPP {
+      border-radius: 50%;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: 24px;
+      color: #333;
+      margin: 0;
+    }
+
+    p {
+      font-size: 16px;
+      color: #555;
+      line-height: 1.6;
+    }
+
+    h2 {
+      font-size: 20px;
+      color: #333;
+      margin-top: 30px;
+    }
+
+    ul.characteristics {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    ul.characteristics li {
+      background-color: #520f4e4b;
+      margin: 8px 0;
+      padding: 10px;
+      border-radius: 5px;
+      font-size: 16px;
+      color: #333;
+    }
+
+    /* Footer Styling */
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: auto;
+    }
+
+    footer a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <!-- Header Section -->
   <header>
-    <main>
-      <div class="logo">
-        <img src="../imeges/hz.logo.png" width="300" height="200" alt="logo">
+    <nav class="navibar">
+      <div class="menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a class="active" href="profile.html">Profile</a></li>
+          <li><a href="dashboard.html">Dashboard</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><img id="logo" src="hz-logo.png" width="25px" height="30px" alt="Logo"></li>
+        </ul>
       </div>
-      <article>
-        <nav class="navigation">
-          <li> <a href="index.html">Home</a></li>
-          <li> <a href="profile.html" class="active">profile</a></li>
-          <li> <a href="dashboard.html">Dashboard</a></li>
-          <li> <a href="faq.html">FAQ</a></li>
-          <li> <a href="blog.html">Blog</a></li>
-         </ul>
-        </nav>
-  </header>      
-        <div class="a">        
-      <h1>Hello World!</h1>
-    
-      <h1>This is Yasamin Abdollahi</h1>
-      </div>
-      <p>I am 19 years old, and I am studing ICT in HZ university of applied science. This is my first semester.
-      </p>
-      <p>My studies fouces on key areas of Information and Communication Technology, including software development,
-        web development, and database management. I am also deeply interested in cybersecurity and cloud computing,
-        working to create secure, efficient digital environment that drive innovation and streamline operations.
-      </p>
-      <section>
-        <img src="istockphoto-2005096437-1024x1024.jpg" width="400" height="550" alt="a photo of me."> 
-      </section>
-     
-      <section>
-      <h2>For Some Personal Information</h2>
-       <ul>
-        <li>Curious</li>
-        <li>Kind and compassionate</li>
-        <li>Hard working</li>
-        <li>great teammate</li>
-        <li>Ambitious</li>
-        <li>cautious</li>
-       </ul>
-      </section>
-      <a href="https://www.instrageram.com/aysminn_" target="_blank">Follow me on instrageram</a>
-     </article>
-     </main>
-    </body>
-  </html>
+    </nav>
+  </header>
+
+  <!-- Main Content Section -->
+  <div class="content-wrapper">
+    <div class="profile-container">
+      <img class="imgPP" src="IMG_9402.jpg" height="300" width="300" alt="Profile Image">
+      <h1>Welcome to my profile page!</h1>
+      <p>Greetings! I'm Yasamin, I’m a 19-year-old and I am 19 years old. My journey into the world of Information and Communication Technology is fueled by a deep curiosity and a passion for exploring the intersection of technology and human interaction.</p>
+      <p>currently navigating my way through the world of ICT at HZ University. My initial foray into humanities has equipped me with a unique perspective on technology's impact on society. As I delve into my studies in software development and cybersecurity, I’m driven by a desire to leverage tech to solve real-world problems and enhance user experiences. Outside of academics, I’m passionate about exploring new technologies and contributing to initiatives that make a positive difference. I’m excited about the future and eager to connect with fellow tech enthusiasts and innovators.</p>
+
+      <h2>Characteristics</h2>
+      <ul class="characteristics">
+        <li>Creative Problem-Solver</li>
+        <li>Analytical Thinker</li>
+        <li>Detail-Oriented</li>
+        <li>Passionate about Technology</li>
+        <li>Strong Communication Skills</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>Email: yasaminabdollahi27@gmail.com</p>
+    <p>Instagram: <a href="https://www.instagram.com/aysminn_" target="_blank">aysminn_</a></p>
+  </footer>
+
+</body>
+
+</html>
+

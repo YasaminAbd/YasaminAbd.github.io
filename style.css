@@ -1,3 +1,24 @@
+.wel{
+    font-size: 30px;
+    font-family: 'Brush Script MT', cursive;
+    background-color: #3333338a;
+    padding-left: cm;
+}
+imgBP { 
+    background-color: rgba(0, 255, 255, 0.603);
+    width: 300px;
+    height: 300px;
+    padding-left: 20%;
+    
+}
+.imgPP {
+    padding-left: 14cm;
+    padding-top: 3.4cm;
+}
+
+.active {
+    background-color: rgba(127, 134, 173, 0.863);
+}
 {
     margin: 0;
     padding: 0;
@@ -12,7 +33,7 @@ body {
 body {
     line-height: 1.6;
     color: white;
-    background: url(../YasaminAbd.github.io/—Pngtree—3d\ rendering\ of\ website\ builder_7231387.jpg)no-repeat center center fixed;
+    background: url(—Pngtree—3d\ rendering\ of\ website\ builder_7231387.jpg)no-repeat center center fixed;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -126,7 +147,6 @@ header {
     font-family: Didot, Didot LT STD, Hoefler Text, Garamond, Calisto MT, Times New Roman, serif;
     font-size: 20px; 
     text-align: left;
-    width: 50%;
 }
 .profile-content {
     display: flex;
@@ -285,10 +305,175 @@ faq-question{
     text-align: left;
 }
 .pic {
-    position: fixed;
-    
+    position: relative;
+    left: 1000px;
+    bottom: 1100px;
 
 }
 .pic2{
-    position: fixed;
+    position: relative;
+    left: 1000px;
+    bottom: 1050px;
+
+}
+.aside{
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: medium;
+    background-color: rgba(7, 7, 7, 0.671);
+    margin-left:30px;
+    margin-right: 30px;
+    width: 50%;
+    padding: 20px;
+    flex-direction: row;
+    color: rgb(243, 241, 245);
+    border-radius: 10px;
+}
+.wrapper5{   
+    padding: 30px;
+    max-width: calc(1200px-340px);
+    background-color:rgba(44, 25, 54, 0.664);
+    margin: 10px auto;
+    border-radius: 10px;
+    color: aliceblue;
+    box-shadow: 0 3px 5px rgba(rgb(117, 44, 114));
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    font-family:Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
+    font-size: 8px; ;
+    text-align: center;
+    margin-top: 80px;
+    body {
+        background: url('path/to/your-background-image.jpg') no-repeat center center fixed;
+        background-size: cover;
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+    }
+    
+    header {
+        background: url('path/to/your-header-background-image.jpg') no-repeat center center;
+        background-size: cover;
+        padding: 10px 0;
+    }
+    
+    .navibar ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .navibar ul li {
+        padding: 14px 20px;
+    }
+    
+    .navibar ul li a {
+        color: white;
+        text-decoration: none;
+    }
+    
+    .wrapper {
+        padding: 20px;
+        background-color: rgba(255, 255, 255, 0.8);
+    }
+    
+    .about-me, .additional-info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+    }
+    
+    .text, .info-text {
+        flex: 1;
+        padding: 10px;
+    }
+    
+    .images, .info-images {
+        flex: 1;
+        display: flex;
+        gap: 10px; /* Adds space between images */
+    }
+    
+    .images img, .info-images img {
+        width: 100%;
+        height: auto;
+        max-width: 300px; /* Ensures images do not grow too large */
+    }
+    
+    footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        position: relative;
+        bottom: 0;
+        width: 100%;
+    }
+    body {
+        background: #f4f4f4;
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+    }
+    
+    header {
+        background: #333;
+        color: white;
+        padding: 10px 0;
+    }
+    
+    .navibar ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .navibar ul li {
+        padding: 14px 20px;
+    }
+    
+    .navibar ul li a {
+        color: white;
+        text-decoration: none;
+    }
+    
+    .profile {
+        padding: 20px;
+        background-color: #fff;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    
+    .profile-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+    
+    .profile-header img,
+    .profile-header video {
+        width: 200px;
+        height: auto;
+        border-radius: 50%;
+    }
+    
+    .profile-header h1 {
+        font-size: 2em;
+        margin-left: 20px;
+    }
+    
+    .profile-content {
+        display: flex;
+        flex-direction: column;
+    }
+    
+.profile {
+    margin: 0;
+    padding-top: 50px; /* Moves content 50px down */
 }
